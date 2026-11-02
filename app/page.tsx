@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -34,7 +33,7 @@ const copy = {
     productsTag: "EXPLORE WHAT WE OFFER",
     productsTitle: "Solutions for a more sustainable everyday.",
     productsText: "Explore our range of products designed for different waste management and sustainable technology needs.",
-    productAction: "Enquire about this solution",
+    productAction: "View product details",
     productNames: ["Ring Compost Systems", "Biogas Plants", "Incinerators", "Waste Burners", "Solar Panels"],
     productDescriptions: [
       "A practical approach to managing everyday organic waste and supporting composting at the source.",
@@ -118,7 +117,7 @@ const copy = {
     productsTag: "ഞങ്ങളുടെ ഉൽപ്പന്നങ്ങൾ",
     productsTitle: "സുസ്ഥിരമായ ദൈനംദിന ജീവിതത്തിനുള്ള പരിഹാരങ്ങൾ.",
     productsText: "വ്യത്യസ്ത മാലിന്യ സംസ്കരണ, സുസ്ഥിര സാങ്കേതിക ആവശ്യങ്ങൾക്കായുള്ള ഉൽപ്പന്നങ്ങൾ പരിചയപ്പെടുക.",
-    productAction: "ഈ പരിഹാരത്തെക്കുറിച്ച് അന്വേഷിക്കുക",
+    productAction: "ഉൽപ്പന്ന വിശദാംശങ്ങൾ കാണുക",
     productNames: ["റിംഗ് കമ്പോസ്റ്റ് സംവിധാനങ്ങൾ", "ബയോഗ്യാസ് പ്ലാന്റുകൾ", "ഇൻസിനറേറ്ററുകൾ", "വേസ്റ്റ് ബേർണറുകൾ", "സോളാർ പാനലുകൾ"],
     productDescriptions: [
       "ദൈനംദിന ജൈവ മാലിന്യം ഉറവിടത്തിൽ തന്നെ കൈകാര്യം ചെയ്യുന്നതിനുള്ള പ്രായോഗിക മാർഗം.",
@@ -183,30 +182,35 @@ const copy = {
 const products = [
   {
     number: "01",
+    slug: "ring-compost",
     category: "ORGANIC WASTE",
     image: "/images/ring-compost.jpeg",
     alt: "Ring compost system"
   },
   {
     number: "02",
+    slug: "biogas-plant",
     category: "RENEWABLE ENERGY",
     image: "/images/biogas.jpeg",
     alt: "Biogas plant"
   },
   {
     number: "03",
+    slug: "incinerator",
     category: "WASTE TREATMENT",
     image: "/images/incinerator.jpeg",
     alt: "Waste treatment incinerator"
   },
   {
     number: "04",
+    slug: "waste-burner",
     category: "WASTE MANAGEMENT",
     image: "/images/waste-burner.jpeg",
     alt: "Waste management burner"
   },
   {
     number: "05",
+    slug: "solar-systems",
     category: "SOLAR ENERGY",
     image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1100&q=85",
     alt: "Solar panels"
@@ -375,11 +379,9 @@ export default function Home() {
           {products.map((product, index) => (
             <article className="product-card compact-product-card" key={product.number}>
               <a
-                href={`mailto:${email}?subject=${encodeURIComponent(
-                  `Enquiry - ${t.productNames[index]}`
-                )}`}
+                href={`/products/${product.slug}`}
                 className="product-photo"
-                aria-label={`${t.productNames[index]} enquiry`}
+                aria-label={`${t.productNames[index]} details`}
               >
                 <img src={product.image} alt={product.alt} loading="lazy" />
                 <span className="product-count">{product.number}</span>
@@ -398,9 +400,7 @@ export default function Home() {
 
                 <a
                   className="product-link"
-                  href={`mailto:${email}?subject=${encodeURIComponent(
-                    `Enquiry - ${t.productNames[index]}`
-                  )}`}
+                  href={`/products/${product.slug}`}
                 >
                   {t.productAction} <span>→</span>
                 </a>
