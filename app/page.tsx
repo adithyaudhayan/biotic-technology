@@ -22,7 +22,7 @@ const copy = {
     heroNote: "WASTE LESS. LIVE BETTER.",
     introTag: "WELCOME TO BIOTIC",
     introTitle: "Making better waste management part of everyday life.",
-    introText: "BIOTIC TECHNOLOGY brings together a range of waste management and sustainable technology solutions. From organic waste processing to renewable energy and solar products, our focus is on helping homes, communities and organisations explore practical ways to use resources more responsibly.",
+    introText: "BIOTIC TECHNOLOGIES brings together a range of waste management and sustainable technology solutions. From organic waste processing to renewable energy and solar products, our focus is on helping homes, communities and organisations explore practical ways to use resources more responsibly.",
     introLink: "Talk to our team",
     highlightTag: "A MORE CONSIDERED APPROACH",
     highlightTitle: "Small changes. Meaningful possibilities.",
@@ -50,7 +50,7 @@ const copy = {
       ["02", "Explore the options", "Understand the solutions that may be relevant to your requirements."],
       ["03", "Discuss the details", "Talk through product suitability, site conditions and next steps."]
     ],
-    whyTag: "WHY BIOTIC TECHNOLOGY",
+    whyTag: "WHY BIOTIC TECHNOLOGIES",
     whyTitle: "A practical approach to a greener future.",
     whyText: "Sustainable solutions should make sense in everyday life. We focus on understanding the application and exploring technology that responds to real requirements.",
     reasons: [
@@ -227,7 +227,7 @@ export default function Home() {
   const t = copy[language];
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-    "Hello BIOTIC TECHNOLOGY, I would like to enquire about your products and solutions."
+    "Hello BIOTIC TECHNOLOGIES, I would like to enquire about your products and solutions."
   )}`;
 
   return (
@@ -239,17 +239,17 @@ export default function Home() {
       </div>
 
       <header className="header">
-        <a className="brand" href="#home" aria-label="BIOTIC TECHNOLOGY">
+        <a className="brand" href="#home" aria-label="BIOTIC TECHNOLOGIES">
           <img
             src="/images/biotic-logo.jpeg"
-            alt="BIOTIC TECHNOLOGY"
+            alt="BIOTIC TECHNOLOGIES"
             width="60"
             height="60"
             className="company-logo"
           />
           <span className="brand-name">
             <strong>BIOTIC</strong>
-            <small>TECHNOLOGY</small>
+            <small>TECHNOLOGIES</small>
           </span>
         </a>
 
@@ -330,7 +330,7 @@ export default function Home() {
         </div>
 
         <div className="hero-bottom">
-          <span>BIOTIC TECHNOLOGY · KERALA</span>
+          <span>BIOTIC TECHNOLOGIES · KERALA</span>
           <span className="hero-bottom-center">{t.heroNote}</span>
           <a href="#solutions">EXPLORE ↓</a>
         </div>
@@ -538,14 +538,14 @@ export default function Home() {
           <a className="brand footer-brand" href="#home">
             <img
               src="/images/biotic-logo.jpeg"
-              alt="BIOTIC TECHNOLOGY"
+              alt="BIOTIC TECHNOLOGIES"
               width="52"
               height="52"
               className="company-logo"
             />
             <span className="brand-name">
               <strong>BIOTIC</strong>
-              <small>TECHNOLOGY</small>
+              <small>TECHNOLOGIES</small>
             </span>
           </a>
 
@@ -557,7 +557,7 @@ export default function Home() {
         </div>
 
         <div className="footer-bottom">
-          <span>© 2026 BIOTIC TECHNOLOGY. {t.rights}</span>
+          <span>© 2026 BIOTIC TECHNOLOGIES. {t.rights}</span>
           <span>{t.footerPhrase}</span>
           <span>KERALA · INDIA</span>
         </div>
