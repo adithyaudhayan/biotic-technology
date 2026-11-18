@@ -178,7 +178,7 @@ const copy = {
     backTop: "മുകളിലേക്ക് ↑"
   }
 };
-
+        
 const products = [
   {
     number: "01",
@@ -407,10 +407,51 @@ export default function Home() {
               </div>
             </article>
           ))}
+        
+        </div>
+      </section>
+
+      {/* RING COMPOST DEMONSTRATION VIDEO */}
+      <section className="ring-compost-demo section-wrap">
+        <div className="ring-demo-heading">
+          <div className="eyebrow eyebrow-dark">
+            <span />
+            {language === "en"
+              ? "WATCH OUR DEMONSTRATION"
+              : "ഞങ്ങളുടെ പ്രവർത്തന വീഡിയോ കാണൂ"}
+          </div>
+
+          <h2>
+            {language === "en"
+              ? "See Our Ring Compost System in Action."
+              : "ഞങ്ങളുടെ റിംഗ് കമ്പോസ്റ്റ് സംവിധാനം പ്രവർത്തിക്കുന്നത് കാണൂ."}
+          </h2>
+
+          <p>
+            {language === "en"
+              ? "Discover how our Ring Compost System helps manage everyday organic waste through this real product demonstration."
+              : "ദൈനംദിന ജൈവ മാലിന്യം കൈകാര്യം ചെയ്യാൻ ഞങ്ങളുടെ റിംഗ് കമ്പോസ്റ്റ് സംവിധാനം എങ്ങനെ സഹായിക്കുന്നുവെന്ന് ഈ വീഡിയോയിലൂടെ കാണൂ."}
+          </p>
+        </div>
+
+        <div className="ring-demo-video">
+          <video
+            controls
+            playsInline
+            preload="metadata"
+            poster="/images/ring-compost.jpeg"
+          >
+            <source
+              src="/videos/ring-compost-demo.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support video playback.
+          </video>
         </div>
       </section>
 
       <section className="compact-why section-wrap" id="why-biotic">
+
         <div className="compact-why-heading">
           <div className="eyebrow eyebrow-light">
             <span /> {t.whyTag}

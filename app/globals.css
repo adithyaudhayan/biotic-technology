@@ -2187,3 +2187,66 @@ p {
     border-left: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
+
+/* Ring Compost Demonstration Section */
+
+.ring-compost-demo {
+  padding-top: 65px;
+  padding-bottom: 75px;
+  text-align: center;
+}
+
+.ring-demo-heading {
+  max-width: 720px;
+  margin: 0 auto 32px;
+}
+
+.ring-demo-heading .eyebrow {
+  justify-content: center;
+}
+
+.ring-demo-heading h2 {
+  font-family: var(--heading);
+  font-size: clamp(28px, 3.5vw, 44px);
+  line-height: 1.2;
+  color: var(--green-dark);
+  margin: 18px 0;
+}
+
+.ring-demo-heading p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.ring-demo-video {
+  max-width: 850px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #111;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
+}
+
+.ring-demo-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  background: #111;
+}
+
+@media (max-width: 650px) {
+  .ring-compost-demo {
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+
+  .ring-demo-heading h2 {
+    font-size: 27px;
+  }
+
+  .ring-demo-video {
+    border-radius: 14px;
+  }
+}
