@@ -546,7 +546,7 @@ export default function Home() {
             <span className="brand-name">
               <strong>BIOTIC</strong>
               <small>TECHNOLOGIES</small>
-              <small>since 2014</small>
+              <small>since 2017</small>
             </span>
           </a>
 
@@ -558,7 +558,7 @@ export default function Home() {
         </div>
 
         <div className="footer-bottom">
-          <span>© 2014 BIOTIC TECHNOLOGIES. {t.rights}</span>
+          <span>© 2017 BIOTIC TECHNOLOGIES. {t.rights}</span>
           <span>{t.footerPhrase}</span>
           <span>KERALA · INDIA</span>
         </div>

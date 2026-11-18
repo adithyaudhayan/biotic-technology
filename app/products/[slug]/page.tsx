@@ -321,7 +321,7 @@ export default function ProductDetailPage() {
           BIOTIC TECHNOLOGIES
         </Link>
         <span>KERALA · INDIA</span>
-        <span>© 2014 BIOTIC TECHNOLOGIES</span>
+        <span>© 2017 BIOTIC TECHNOLOGIES</span>
       </footer>
 
       <div className="detail-mobile-contact">
