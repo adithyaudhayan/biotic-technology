@@ -5,7 +5,7 @@ import { useState } from "react";
 type Language = "en" | "ml";
 
 const email = "biotictechnologies11@gmail.com";
-const phones = ["+917902636232", "+917994136232", "+919207118557"];
+const phones = ["+917902636232", "+917994136232"];
 const whatsappNumber = "917902636232";
 
 const copy = {
@@ -546,6 +546,7 @@ export default function Home() {
             <span className="brand-name">
               <strong>BIOTIC</strong>
               <small>TECHNOLOGIES</small>
+              <small>since 2014</small>
             </span>
           </a>
 
@@ -557,7 +558,7 @@ export default function Home() {
         </div>
 
         <div className="footer-bottom">
-          <span>© 2026 BIOTIC TECHNOLOGIES. {t.rights}</span>
+          <span>© 2014 BIOTIC TECHNOLOGIES. {t.rights}</span>
           <span>{t.footerPhrase}</span>
           <span>KERALA · INDIA</span>
         </div>

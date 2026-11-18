@@ -100,18 +100,18 @@ const productDetails = [
     title: "Waste Burner",
     malayalamTitle: "വേസ്റ്റ് ബേർണർ",
     description:
-      "BIOTIC TECHNOLOGY offers waste burner equipment for customers exploring waste handling options. The appropriate model and application depend on the specific waste type, site conditions and operating requirements.",
+      "BIOTIC TECHNOLOGIES offers waste burner equipment for customers exploring waste handling options. The appropriate model and application depend on the specific waste type, site conditions and operating requirements.",
     malayalamDescription:
       "മാലിന്യം കൈകാര്യം ചെയ്യുന്നതിനുള്ള വിവിധ മാർഗങ്ങൾ അന്വേഷിക്കുന്ന ഉപഭോക്താക്കൾക്കായി BIOTIC TECHNOLOGY വേസ്റ്റ് ബേർണർ ഉപകരണങ്ങൾ നൽകുന്നു. അനുയോജ്യമായ മോഡലും ഉപയോഗവും മാലിന്യത്തിന്റെ തരം, സ്ഥലസാഹചര്യങ്ങൾ, പ്രവർത്തന ആവശ്യങ്ങൾ എന്നിവയെ ആശ്രയിച്ചിരിക്കും.",
     features: [
-      "Product details can be discussed with our team",
-      "Share the type of waste and intended application",
-      "Ask our team about available models and specifications"
+      "Stainless steel body ",
+      "High temperature for easy buring",
+      "Portable and long lasting"
     ],
     malayalamFeatures: [
-      "ഉൽപ്പന്ന വിശദാംശങ്ങൾ ഞങ്ങളുടെ ടീമുമായി ചർച്ച ചെയ്യാം",
-      "മാലിന്യത്തിന്റെ തരവും ഉദ്ദേശിക്കുന്ന ഉപയോഗവും പങ്കുവെക്കുക",
-      "ലഭ്യമായ മോഡലുകളും സാങ്കേതിക വിവരങ്ങളും ഞങ്ങളുടെ ടീമിനോട് ചോദിക്കുക"
+      "സ്റ്റെയിൻലെസ് സ്റ്റീൽ ബോഡി",
+"എളുപ്പത്തിൽ കത്തിക്കുന്നതിനായി ഉയർന്ന താപനില",
+"എളുപ്പത്തിൽ കൊണ്ടുപോകാവുന്നതും ദീർഘകാലം നിലനിൽക്കുന്നതും"
     ],
     note: "Contact us for confirmed specifications, suitable applications and product availability.",
     malayalamNote:
@@ -127,18 +127,18 @@ const productDetails = [
     description:
       "BIOTIC TECHNOLOGY provides complete solar panel systems for customers exploring solar energy solutions. Contact our team to discuss your energy requirements and the system options available for your property.",
     malayalamDescription:
-      "സോളാർ ഊർജ പരിഹാരങ്ങൾ അന്വേഷിക്കുന്ന ഉപഭോക്താക്കൾക്കായി BIOTIC TECHNOLOGY പൂർണ്ണ സോളാർ പാനൽ സംവിധാനങ്ങൾ നൽകുന്നു. നിങ്ങളുടെ ഊർജ ആവശ്യങ്ങളും സ്ഥലത്തിന് അനുയോജ്യമായ സംവിധാനങ്ങളും ചർച്ച ചെയ്യാൻ ഞങ്ങളുടെ ടീമിനെ ബന്ധപ്പെടുക.",
+      "സോളാർ ഊർജ പരിഹാരങ്ങൾ അന്വേഷിക്കുന്ന ഉപഭോക്താക്കൾക്കായി BIOTIC TECHNOLOGIES പൂർണ്ണ സോളാർ പാനൽ സംവിധാനങ്ങൾ നൽകുന്നു. നിങ്ങളുടെ ഊർജ ആവശ്യങ്ങളും സ്ഥലത്തിന് അനുയോജ്യമായ സംവിധാനങ്ങളും ചർച്ച ചെയ്യാൻ ഞങ്ങളുടെ ടീമിനെ ബന്ധപ്പെടുക.",
     features: [
       "Complete solar panel system solutions",
-      "Discuss your energy requirements with our team",
+      "We use Adani, Tata etc",
       "Ask about available system options and specifications",
       "System selection depends on your property and energy needs"
     ],
     malayalamFeatures: [
-      "പൂർണ്ണ സോളാർ പാനൽ സംവിധാനങ്ങൾ",
-      "നിങ്ങളുടെ ഊർജ ആവശ്യങ്ങൾ ഞങ്ങളുടെ ടീമുമായി ചർച്ച ചെയ്യുക",
-      "ലഭ്യമായ സംവിധാനങ്ങളും സാങ്കേതിക വിവരങ്ങളും ചോദിച്ചറിയുക",
-      "നിങ്ങളുടെ സ്ഥലവും ഊർജ ആവശ്യങ്ങളും അനുസരിച്ചാണ് സംവിധാനം തിരഞ്ഞെടുക്കേണ്ടത്"
+      "സമ്പൂർണ്ണ സോളാർ പാനൽ സിസ്റ്റം പരിഹാരങ്ങൾ",
+"അദാനി, ടാറ്റ തുടങ്ങിയ ബ്രാൻഡുകളുടെ ഉൽപ്പന്നങ്ങൾ ഉപയോഗിക്കുന്നു",
+"ലഭ്യമായ സിസ്റ്റം ഓപ്ഷനുകളെയും സാങ്കേതിക വിവരങ്ങളെയും കുറിച്ച് അറിയാൻ ബന്ധപ്പെടുക",
+"നിങ്ങളുടെ കെട്ടിടത്തിന്റെയും വൈദ്യുതി ആവശ്യങ്ങളുടെയും അടിസ്ഥാനത്തിലാണ് സിസ്റ്റം തിരഞ്ഞെടുക്കുന്നത്"
     ],
     note: "Contact us to discuss system sizing, specifications and installation requirements.",
     malayalamNote:
@@ -182,7 +182,7 @@ export default function ProductDetailPage() {
 
   const whatsappMessage =
     language === "en"
-      ? `Hello BIOTIC TECHNOLOGY, I would like to enquire about the ${product.title}. Please share more details.`
+      ? `Hello BIOTIC TECHNOLOGIES, I would like to enquire about the ${product.title}. Please share more details.`
       : `നമസ്കാരം BIOTIC TECHNOLOGY, ${product.malayalamTitle} സംബന്ധിച്ച് കൂടുതൽ വിവരങ്ങൾ അറിയാൻ ആഗ്രഹിക്കുന്നു. ദയവായി വിശദാംശങ്ങൾ പങ്കുവെക്കുക.`;
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
@@ -195,11 +195,11 @@ export default function ProductDetailPage() {
         <Link href="/" className="detail-brand">
           <img
             src="/images/biotic-logo.jpeg"
-            alt="BIOTIC TECHNOLOGY"
+            alt="BIOTIC TECHNOLOGIES"
           />
           <span>
             <strong>BIOTIC</strong>
-            <small>TECHNOLOGY</small>
+            <small>TECHNOLOGIES</small>
           </span>
         </Link>
 
@@ -241,7 +241,7 @@ export default function ProductDetailPage() {
               className="product-detail-image"
             />
             <span className="detail-image-caption">
-              BIOTIC TECHNOLOGY
+              BIOTIC TECHNOLOGIES
             </span>
           </div>
 
@@ -250,7 +250,7 @@ export default function ProductDetailPage() {
               <span />
               {language === "en"
                 ? product.category
-                : "BIOTIC TECHNOLOGY"}
+                : "BIOTIC TECHNOLOGIES"}
             </div>
 
             <h1>{title}</h1>
@@ -318,10 +318,10 @@ export default function ProductDetailPage() {
 
       <footer className="product-detail-footer">
         <Link href="/" className="detail-footer-brand">
-          BIOTIC TECHNOLOGY
+          BIOTIC TECHNOLOGIES
         </Link>
         <span>KERALA · INDIA</span>
-        <span>© 2026 BIOTIC TECHNOLOGY</span>
+        <span>© 2014 BIOTIC TECHNOLOGIES</span>
       </footer>
 
       <div className="detail-mobile-contact">
