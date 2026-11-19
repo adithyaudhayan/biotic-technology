@@ -80,6 +80,23 @@ export const metadata: Metadata = {
   category: "Sustainable Technology",
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "BIOTIC TECHNOLOGIES",
+  url: "https://biotictechnologies.in",
+  logo: "https://biotictechnologies.in/images/biotic-logo.jpeg",
+  description:
+    "BIOTIC TECHNOLOGIES provides waste management, organic waste processing, biogas plants, incinerators, waste burners and solar energy solutions in Kerala, India.",
+  email: "biotictechnologies11@gmail.com",
+  telephone: "+917902636232",
+  areaServed: {
+    "@type": "AdministrativeArea",
+    name: "Kerala",
+  },
+};
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -88,6 +105,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dmSans.variable} ${manrope.variable}`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema).replace(
+              /</g,
+              "\\u003c"
+            ),
+          }}
+        />
         {children}
       </body>
     </html>
