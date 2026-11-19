@@ -15,42 +15,69 @@ const manrope = Manrope({
   display: "swap",
 });
 
+const siteUrl = "https://biotictechnologies.in";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://biotictechnologies.com"),
+  metadataBase: new URL(siteUrl),
 
   title: {
-    default: "BIOTIC TECHNOLOGIES | Sustainable Technology Solutions",
+    default:
+      "BIOTIC TECHNOLOGIES | Waste Management & Sustainable Solutions in Kerala",
     template: "%s | BIOTIC TECHNOLOGIES",
   },
 
   description:
-    "BIOTIC TECHNOLOGIES offers waste management, organic waste processing, biogas, waste treatment and renewable energy solutions in Kerala, India.",
+    "BIOTIC TECHNOLOGIES provides ring compost systems, biogas plants, incinerators, waste burners and complete solar panel systems in Kerala, India. Explore sustainable waste management solutions.",
 
   applicationName: "BIOTIC TECHNOLOGIES",
 
   keywords: [
     "BIOTIC TECHNOLOGIES",
     "Waste Management Kerala",
+    "Ring Compost Kerala",
     "Ring Compost Systems",
+    "Biogas Plant Kerala",
     "Biogas Plants",
-    "Incinerators",
-    "Solar Energy",
-    "Sustainable Technology",
+    "Incinerators Kerala",
+    "Waste Burners",
+    "Solar Panel Systems Kerala",
+    "Sustainable Waste Management",
+    "Organic Waste Management",
+    "Renewable Energy Kerala",
   ],
 
+  alternates: {
+    canonical: siteUrl,
+  },
+
   openGraph: {
-    title: "BIOTIC TECHNOLOGIES",
+    title:
+      "BIOTIC TECHNOLOGIES | Sustainable Solutions in Kerala",
     description:
-      "Practical waste management and sustainable technology solutions.",
+      "Explore ring compost systems, biogas plants, incinerators, waste burners and complete solar panel systems from BIOTIC TECHNOLOGIES.",
+    url: siteUrl,
+    siteName: "BIOTIC TECHNOLOGIES",
     type: "website",
     locale: "en_IN",
-    siteName: "BIOTIC TECHNOLOGIES",
+  },
+
+  twitter: {
+    card: "summary",
+    title: "BIOTIC TECHNOLOGIES",
+    description:
+      "Waste management and sustainable technology solutions in Kerala, India.",
   },
 
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
+
+  category: "Sustainable Technology",
 };
 
 export default function RootLayout({
