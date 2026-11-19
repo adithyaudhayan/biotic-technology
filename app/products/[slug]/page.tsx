@@ -4,6 +4,22 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useState } from "react";
 
+function trackWhatsAppClick(productName: string) {
+  if (typeof window === "undefined") return;
+
+  const gtag = (
+    window as Window & {
+      gtag?: (...args: unknown[]) => void;
+    }
+  ).gtag;
+
+  gtag?.("event", "whatsapp_click", {
+    product_name: productName,
+    enquiry_method: "whatsapp",
+  });
+}
+
+
 type Language = "en" | "ml";
 
 const email = "biotictechnologies11@gmail.com";
@@ -180,14 +196,16 @@ export default function ProductDetailPage() {
   const note =
     language === "en" ? product.note : product.malayalamNote;
 
-  const whatsappMessage =
-    language === "en"
-      ? `Hello BIOTIC TECHNOLOGIES, I would like to enquire about the ${product.title}. Please share more details.`
-      : `നമസ്കാരം BIOTIC TECHNOLOGY, ${product.malayalamTitle} സംബന്ധിച്ച് കൂടുതൽ വിവരങ്ങൾ അറിയാൻ ആഗ്രഹിക്കുന്നു. ദയവായി വിശദാംശങ്ങൾ പങ്കുവെക്കുക.`;
+  
+const whatsappMessage =
+  language === "en"
+    ? `Hello BIOTIC TECHNOLOGIES, I would like to enquire about the ${product.title}. Please share more details.`
+    : `നമസ്കാരം BIOTIC TECHNOLOGIES, ${product.malayalamTitle} സംബന്ധിച്ച് കൂടുതൽ വിവരങ്ങൾ അറിയാൻ ആഗ്രഹിക്കുന്നു. ദയവായി വിശദാംശങ്ങൾ പങ്കുവെക്കുക.`;
 
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-    whatsappMessage
-  )}`;
+const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+  whatsappMessage
+)}`;
+
 
   return (
     <main className="product-detail-page">
@@ -292,6 +310,7 @@ export default function ProductDetailPage() {
                 className="detail-btn detail-whatsapp"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick(product.title)}
               >
                 <span>↗</span>
                 {language === "en" ? "Enquire on WhatsApp" : "വാട്സ്ആപ്പിൽ അന്വേഷിക്കുക"}
